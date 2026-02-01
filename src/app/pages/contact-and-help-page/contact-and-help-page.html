@@ -1,0 +1,204 @@
+<app-header />
+
+<!-- TODO: Récupérer la FAQ depuis une API -->
+<section class="max-w-7xl mx-auto px-6 py-16">
+
+  <!-- Titre -->
+  <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+    Questions fréquentes
+  </h2>
+
+  <!-- Grid -->
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+    <!-- Card -->
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+      <h3 class="text-lg font-semibold text-indigo-600 mb-3">
+        Comment réserver un titre ?
+      </h3>
+
+      <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        Vous pouvez acheter votre titre directement depuis votre espace en ligne,
+        via l’application ou sur les bornes automatiques.
+      </p>
+
+      <a href="#" class="text-indigo-600 font-medium hover:underline">
+        En savoir plus →
+      </a>
+    </div>
+
+    <!-- Card -->
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+      <h3 class="text-lg font-semibold text-indigo-600 mb-3">
+        Où consulter mes trajets ?
+      </h3>
+
+      <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        Retrouvez tous vos trajets dans votre espace personnel,
+        accessible 24h/24 depuis votre compte.
+      </p>
+
+      <a href="#" class="text-indigo-600 font-medium hover:underline">
+        En savoir plus →
+      </a>
+    </div>
+
+    <!-- Card -->
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+      <h3 class="text-lg font-semibold text-indigo-600 mb-3">
+        Puis-je modifier ma réservation ?
+      </h3>
+
+      <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        Oui, selon les conditions de votre titre, vous pouvez modifier
+        ou annuler votre réservation en ligne.
+      </p>
+
+      <a href="#" class="text-indigo-600 font-medium hover:underline">
+        En savoir plus →
+      </a>
+    </div>
+
+    <!-- Card -->
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+      <h3 class="text-lg font-semibold text-indigo-600 mb-3">
+        Quels moyens de paiement sont acceptés ?
+      </h3>
+
+      <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        Carte bancaire, PayPal et prélèvement sont disponibles
+        selon votre abonnement.
+      </p>
+
+      <a href="#" class="text-indigo-600 font-medium hover:underline">
+        En savoir plus →
+      </a>
+    </div>
+
+    <!-- Card -->
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+      <h3 class="text-lg font-semibold text-indigo-600 mb-3">
+        Comment contacter le support ?
+      </h3>
+
+      <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        Notre service client est disponible par téléphone,
+        email et formulaire en ligne.
+      </p>
+
+      <a href="#" class="text-indigo-600 font-medium hover:underline">
+        En savoir plus →
+      </a>
+    </div>
+
+    <!-- Card -->
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+      <h3 class="text-lg font-semibold text-indigo-600 mb-3">
+        Problème avec mon abonnement
+      </h3>
+
+      <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        Consultez votre espace client pour vérifier votre statut
+        ou contacter un conseiller.
+      </p>
+
+      <a href="#" class="text-indigo-600 font-medium hover:underline">
+        En savoir plus →
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TODO: Préparer les formulaires avec Angular
+ - Email: obligatoire dans le bon format
+ - Objet: obligatoire
+ - Message: obligatoire
+-->
+<section class="max-w-7xl mx-auto px-6 py-16">
+
+  <!-- Titre -->
+  <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+    Pas de réponses à votre question, contactez nous ! 😊
+  </h2>
+
+  <!-- Form -->
+  <form class="space-y-6">
+
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+          E-mail *
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="exemple@email.com"
+          required
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition"
+        />
+      </div>
+
+      <!-- Phone -->
+      <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
+          Numéro de téléphone (facultatif)
+        </label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="06 12 34 56 78"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition"
+        />
+      </div>
+
+      <!-- Subject -->
+      <div>
+        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">
+          Objet *
+        </label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Ex : Problème de réservation"
+          required
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition"
+        />
+      </div>
+
+      <!-- Message -->
+      <div>
+        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
+          Votre message *
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Expliquez votre demande ici..."
+          required
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg resize-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition"
+        ></textarea>
+      </div>
+
+      <p class="text-gray-700">* : Champs obligatoires</p>
+
+      <!-- Submit -->
+      <div class="pt-4">
+        <button
+          type="submit"
+          class="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg hover:bg-indigo-700 transition shadow-sm cursor-pointer"
+        >
+          Envoyer le message
+        </button>
+      </div>
+
+    </form>
+
+</section>
+
+<app-footer />
