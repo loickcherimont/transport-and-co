@@ -4,6 +4,8 @@
 
 **Transport & Co.** est un site web pour une compagnie de **transport** afin que les visiteurs puisse se renseigner sur les **bus et trams**, prendre un **abonnement** ou **contacter le service client**.
 
+![Preview](./github/preview.png 'Aperçu du site')
+
 ## 🖥️ Stack
 
 <!-- - **Back** : Java 17 (Spring Boot, JPA, H2)   -->
