@@ -1,59 +1,73 @@
-# TransportAndCo
+# 🚄 Transport & Co. App — Loick CHERIMONT
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
+## 🌱 A propos
 
-## Development server
+**Transport & Co.** est un site web pour une compagnie de **transport** afin que les visiteurs puisse se renseigner sur les **bus et trams**, prendre un **abonnement** ou **contacter le service client**.
 
-To start a local development server, run:
+## 🖥️ Stack
 
-```bash
-ng serve
-```
+<!-- - **Back** : Java 17 (Spring Boot, JPA, H2)   -->
+- **Front** : Angular 21, Tailwind CSS 4
+- **IA** : ChatGPT
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🚀 Installation & lancement
 
-## Code scaffolding
+### Prérequis
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Avant d'installer ce projet, veuillez à avoir :
 
-```bash
-ng generate component component-name
-```
+<!-- - **Java** >= 17.0.0   -->
+- **Node.js** >= 18.0.0  
+- **npm** >= 8.0.0 or **yarn** >= 1.22.0   
+<!-- - [Fetch backend](https://github.com/loickcherimont/ticketing-api) (authentication is required) -->
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Installation locale
 
-```bash
-ng generate --help
-```
+<!-- 1. **Backend setup**
 
-## Building
-
-To build the project run:
+Open a new terminal and run the backend
 
 ```bash
-ng build
+   cd [BACKEND_FOLDER]
+   ./mvnw clean install
+   ./mvnw spring-boot:run
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The API will run at [http://localhost:8080](http://localhost:8080) -->
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+1. **Cloner le projet et installer toutes les dépendances**
 
 ```bash
-ng test
+   git clone https://github.com/loickcherimont/transport-and-co.git
+   cd transport-and-co
+   npm install
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+<!-- 3. **Create a `.env` file at the root as following**
 
 ```bash
-ng e2e
+VITE_SERVER_API=http://localhost:8080/api
+``` -->
+
+2. **Lancer le projet**
+
+```bash
+   npm run dev # or pnpm dev (with PNPM)
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+L'application est ouverte sur: [http://localhost:4200](http://localhost:4200)
 
-## Additional Resources
+<!-- TODO: Ajouter les usages possibles -->
+<!-- ## 🎯 Usage -->
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<!-- - Create, assign, and manage **tickets**
+- Track ticket **status** (Open, In Progress, Resolved)
+- Simple and modern UI built with **React** and **Tailwind CSS** -->
+
+## 🔑 License
+
+Cette application est développée par **Loick CHERIMONT** sous License.
+
+---
+
+<div align="center">&copy; 2026 x Loick CHERIMONT</div>
